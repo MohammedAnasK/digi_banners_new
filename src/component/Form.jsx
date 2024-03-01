@@ -1,5 +1,7 @@
+
 import React from "react";
 import { Form, Input, Button } from "antd";
+
 
 const MyForm = () => {
   const onFinish = (values) => {
@@ -61,11 +63,16 @@ const MyForm = () => {
         >
           <h1 className="text-3xl font-semibold mb-6 text-white">Contact Us</h1>
 
+
           {/* <div className="flex">
             <div className="flex flex-1"></div>
             <div className="flex flex-1"></div>
             <div></div>
           </div> */}
+
+// const regex = /^[0-9]{10}$/;
+
+//     return (
 
           <Form.Item
             className="p-2  "
@@ -86,6 +93,7 @@ const MyForm = () => {
             <Input placeholder="Your Email" className=" p-2  border rounded" />
           </Form.Item>
 
+
           <Form.Item
             className="p-2 "
             name="mobile"
@@ -102,6 +110,7 @@ const MyForm = () => {
               //   style={{}}
             />
           </Form.Item>
+
 
           <Form.Item
             className="p-2 "
