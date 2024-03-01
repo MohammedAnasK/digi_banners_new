@@ -5,10 +5,10 @@ import "./App.css";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import Form  from "./component/Form";
 
-
-
+import Form from "./component/Form";
+import TestimonialSection16 from "./component/testemonycard";
+// import CarouselPlugin from "./component/work_slides";
 
 
 const navigation = [
@@ -182,7 +182,10 @@ function App() {
             )}
           </Disclosure>
         </div>
-        <div className=" w-full h-screen  bg-teal-600  text-white text-center">
+
+        <div className="w-full h-screen text-white text-center bg-gradient-to-r from-teal-950 to-green-300 ">
+          {/* <CarouselPlugin /> */}
+
           Banner
        
         </div>
@@ -219,17 +222,19 @@ function App() {
             <img className="" src="pexels-pixabay-36762.jpg" alt="image 1"/>
           </div>
         </div>
-        <div  className="w-full h-screen">
-          <div id="review" className="w-full h-1/2 bg-orange-950 text-white text-center ">
-            Testemony
-          </div>
-          <div id="form" className="w-full h-1/2 bg-pink-900 text-white text-center">
-          <Form/>
-          </div>
+
+
+        <div id="review" className="w-full h-full h- bg-slate-800 text-white text-center ">
+          Testemony
+          <TestimonialSection16 />
+        </div>
+        <div id="form" className="w-full h-screen   bg-pink-900 text-white text-center">
+          <Form />
+
         </div>
 
-        <div className="w-full bg-green-900 text-white text-center">
-          <footer class="bg-white dark:bg-teal-950">
+        <div className="w-full  bg-green-800 text-white text-center flex">
+          <footer class="bg-white dark:bg-teal-950 flex-1">
             <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
               <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
