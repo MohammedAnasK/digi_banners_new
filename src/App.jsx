@@ -5,14 +5,18 @@ import "./App.css";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import Form  from "./component/Form";
+
+
+
+
 
 const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "Work", href: "#", current: false },
-  { name: "Reviews", href: "#", current: false },
-  { name: "Contact", href: "#", current: false },
+  { name: "Home", href: "#home", current: true },
+  { name: "Work", href: "#work", current: false },
+  { name: "Reviews", href: "#review", current: false },
+  { name: "Contact", href: "#form", current: false },
 ];
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -21,7 +25,7 @@ function App() {
   return (
     <>
       <div>
-        <div className="w-full h-full bg-black text-white ">
+        <div id='home' className="w-full h-full bg-black text-white ">
           {/* <h1 className="">DIGIBANNERS</h1> */}
           <Disclosure as="nav" className="bg-teal-950">
             {({ open }) => (
@@ -58,6 +62,7 @@ function App() {
                         <div className="flex space-x-4">
                           {navigation.map((item) => (
                             <a
+                              
                               key={item.name}
                               href={item.href}
                               className={classNames(
@@ -177,27 +182,49 @@ function App() {
             )}
           </Disclosure>
         </div>
-        <div className="w-full h-screen  bg-teal-600  text-white text-center">
+        <div className=" w-full h-screen  bg-teal-600  text-white text-center">
           Banner
+       
         </div>
-        <div className="w-full h-screen bg-slate-600 text-white text-center grid gap-4 grid-cols-5 grid-rows-2 p-4 max-md:grid-cols-2 ">
-          <div className="grid bg-orange-500 rounded-lg "></div>
-          <div className="grid bg-orange-500 rounded-lg"></div>
-          <div className="grid bg-orange-500 rounded-lg"></div>
-          <div className="grid bg-orange-500 rounded-lg"></div>
-          <div className="grid bg-orange-500 rounded-lg"></div>
-          <div className="grid bg-orange-500 rounded-lg"></div>
-          <div className="grid bg-orange-500 rounded-lg"></div>
-          <div className="grid bg-orange-500 rounded-lg"></div>
-          <div className="grid bg-orange-500 rounded-lg"></div>
-          <div className="grid bg-orange-500 rounded-lg"></div>
+        <div id="work" className="w-full h-screen bg-slate-600 text-white text-center grid gap-4 grid-cols-5 grid-rows-2 p-4 max-md:grid-cols-2 ">
+          
+          <div className="grid bg-orange-500 rounded-lg ">
+            <img className="h-auto" src="pexels-pixabay-36762.jpg" alt="image 1"/>
+          </div> 
+          <div className="grid bg-orange-500 rounded-lg">
+          <img className="" src="pexels-pixabay-45853.jpg" alt="image 1"/>
+          </div>
+          <div className="grid bg-orange-500 rounded-lg">
+          <img className="" src="pexels-pixabay-36762.jpg" alt="image 1"/>
+          </div>
+          <div className="grid bg-orange-500 rounded-lg">
+          <img className="" src="pexels-pixabay-36762.jpg" alt="image 1"/>
+          </div>
+          <div className="grid bg-orange-500 rounded-lg">
+          <img className="" src="pexels-pixabay-36762.jpg" alt="image 1"/>
+          </div>
+          <div className="grid bg-orange-500 rounded-lg">
+          <img className="" src="pexels-pixabay-36762.jpg" alt="image 1"/>
+          </div>
+          <div className="grid bg-orange-500 rounded-lg">
+          <img className="" src="pexels-pixabay-36762.jpg" alt="image 1"/>
+          </div>
+          <div className="grid bg-orange-500 rounded-lg">
+          <img className="" src="pexels-pixabay-36762.jpg" alt="image 1"/>
+          </div>
+          <div className="grid bg-orange-500 rounded-lg">
+          <img className="" src="pexels-pixabay-36762.jpg" alt="image 1"/>
+          </div>
+          <div className="grid bg-orange-500 rounded-lg">
+            <img className="" src="pexels-pixabay-36762.jpg" alt="image 1"/>
+          </div>
         </div>
-        <div className="w-full h-screen">
-          <div className="w-full h-1/2 bg-orange-950 text-white text-center ">
+        <div  className="w-full h-screen">
+          <div id="review" className="w-full h-1/2 bg-orange-950 text-white text-center ">
             Testemony
           </div>
-          <div className="w-full h-1/2 bg-pink-900 text-white text-center">
-            Form
+          <div id="form" className="w-full h-1/2 bg-pink-900 text-white text-center">
+          <Form/>
           </div>
         </div>
 
@@ -275,6 +302,7 @@ function App() {
                       </li>
                     </ul>
                   </div>
+                  
                 </div>
               </div>
               <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />

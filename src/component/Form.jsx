@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Input, Button, message } from 'antd';
+import { Form, Input, Button } from 'antd';
 
 const MyForm = () => {
     const onFinish = (values) => {
@@ -11,6 +11,8 @@ const MyForm = () => {
         console.log('Failed:', errorInfo);
 
     };
+
+    const regex = /^[0-9]{10}$/;
 
     return (
 
@@ -46,9 +48,13 @@ const MyForm = () => {
                 <Form.Item
                     className='p-2'
                     name="mobile"
-                    rules={[{ required: true, message: 'Please input your mobile number!' }]}
+                    rules={[
+                        { required: true, message: 'Please input your mobile number!'} ,
+                    { pattern:regex, message: 'Please enter 10 Digit number' },
+                ]}
                 >
-                    <Input placeholder=" Mobile Number" className="w-96 p-2 border rounded" />
+                    <Input type='number' placeholder=" Mobile Number" className="w-96 p-2 border rounded
+                    [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
                 </Form.Item>
 
                 <Form.Item
