@@ -70,9 +70,8 @@ const MyForm = () => {
             <div></div>
           </div> */}
 
-// const regex = /^[0-9]{10}$/;
 
-//     return (
+
 
           <Form.Item
             className="p-2  "
