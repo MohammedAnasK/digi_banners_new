@@ -10,7 +10,6 @@ import Form from "./component/Form";
 import TestimonialSection16 from "./component/testemonycard";
 // import CarouselPlugin from "./component/work_slides";
 
-
 const navigation = [
   { name: "Home", href: "#home", current: true },
   { name: "Work", href: "#work", current: false },
@@ -25,7 +24,7 @@ function App() {
   return (
     <>
       <div>
-        <div id='home' className="w-full h-full bg-black text-white ">
+        <div id="home" className="w-full h-full bg-black text-white ">
           {/* <h1 className="">DIGIBANNERS</h1> */}
           <Disclosure as="nav" className="bg-teal-950">
             {({ open }) => (
@@ -62,7 +61,6 @@ function App() {
                         <div className="flex space-x-4">
                           {navigation.map((item) => (
                             <a
-                              
                               key={item.name}
                               href={item.href}
                               className={classNames(
@@ -185,52 +183,60 @@ function App() {
 
         <div className="w-full h-screen text-white text-center bg-gradient-to-r from-teal-950 to-green-300 ">
           {/* <CarouselPlugin /> */}
-
           Banner
-       
         </div>
-        <div id="work" className="w-full h-screen bg-slate-600 text-white text-center grid gap-4 grid-cols-5 grid-rows-2 p-4 max-md:grid-cols-2 ">
-          
-          <div className="grid bg-orange-500 rounded-lg ">
-            <img className="h-auto" src="pexels-pixabay-36762.jpg" alt="image 1"/>
-          </div> 
-          <div className="grid bg-orange-500 rounded-lg">
-          <img className="" src="pexels-pixabay-45853.jpg" alt="image 1"/>
+        <div
+          id="work"
+          className="w-full h-screen bg-slate-600 text-white text-center grid gap-4 grid-cols-5 grid-rows-2 p-4 overflow-scroll  max-md:grid-cols-1 "
+        >
+          <div className=" h-96 bg-orange-500 rounded-lg ">
+            {/* <img
+              className="h-auto"
+              src="pexels-pixabay-36762.jpg"
+              alt="image 1"
+            /> */}
           </div>
-          <div className="grid bg-orange-500 rounded-lg">
-          <img className="" src="pexels-pixabay-36762.jpg" alt="image 1"/>
+          <div className="h-96 bg-orange-500 rounded-lg">
+            {/* <img className="" src="pexels-pixabay-45853.jpg" alt="image 1" /> */}
           </div>
-          <div className="grid bg-orange-500 rounded-lg">
-          <img className="" src="pexels-pixabay-36762.jpg" alt="image 1"/>
+          <div className="h-96 bg-orange-500 rounded-lg">
+            {/* <img className="" src="pexels-pixabay-36762.jpg" alt="image 1" /> */}
           </div>
-          <div className="grid bg-orange-500 rounded-lg">
-          <img className="" src="pexels-pixabay-36762.jpg" alt="image 1"/>
+          <div className=" h-96 bg-orange-500 rounded-lg">
+            {/* <img className="" src="pexels-pixabay-36762.jpg" alt="image 1" /> */}
           </div>
-          <div className="grid bg-orange-500 rounded-lg">
-          <img className="" src="pexels-pixabay-36762.jpg" alt="image 1"/>
+          <div className="h-96 bg-orange-500 rounded-lg">
+            {/* <img className="" src="pexels-pixabay-36762.jpg" alt="image 1" /> */}
           </div>
-          <div className="grid bg-orange-500 rounded-lg">
-          <img className="" src="pexels-pixabay-36762.jpg" alt="image 1"/>
+          <div className="h-96 bg-orange-500 rounded-lg">
+            {/* <img className="" src="pexels-pixabay-36762.jpg" alt="image 1" /> */}
           </div>
-          <div className="grid bg-orange-500 rounded-lg">
-          <img className="" src="pexels-pixabay-36762.jpg" alt="image 1"/>
+          <div className="h-96 bg-orange-500 rounded-lg">
+            {/* <img className="" src="pexels-pixabay-36762.jpg" alt="image 1" /> */}
           </div>
-          <div className="grid bg-orange-500 rounded-lg">
-          <img className="" src="pexels-pixabay-36762.jpg" alt="image 1"/>
+          <div className="h-96 bg-orange-500 rounded-lg">
+            {/* <img className="" src="pexels-pixabay-36762.jpg" alt="image 1" /> */}
           </div>
-          <div className="grid bg-orange-500 rounded-lg">
-            <img className="" src="pexels-pixabay-36762.jpg" alt="image 1"/>
+          <div className="h-96 bg-orange-500 rounded-lg">
+            {/* <img className="" src="pexels-pixabay-36762.jpg" alt="image 1" /> */}
+          </div>
+          <div className="h-96 bg-orange-500 rounded-lg">
+            {/* <img className="" src="pexels-pixabay-36762.jpg" alt="image 1" /> */}
           </div>
         </div>
 
-
-        <div id="review" className="w-full h-full h- bg-slate-800 text-white text-center ">
+        <div
+          id="review"
+          className="w-full h-full h- bg-slate-800 text-white text-center "
+        >
           Testemony
           <TestimonialSection16 />
         </div>
-        <div id="form" className="w-full h-screen   bg-pink-900 text-white text-center">
+        <div
+          id="form"
+          className="w-full h-screen   bg-pink-900 text-white text-center"
+        >
           <Form />
-
         </div>
 
         <div className="w-full  bg-green-800 text-white text-center flex">
@@ -307,7 +313,6 @@ function App() {
                       </li>
                     </ul>
                   </div>
-                  
                 </div>
               </div>
               <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
