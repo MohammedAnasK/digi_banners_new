@@ -24,7 +24,15 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+
+
+
 function App() {
+
+ const Top = () =>{
+  window.scrollTo(0,0);
+ }
+
   return (
     <>
       <div>
@@ -51,6 +59,12 @@ function App() {
         </div>
 
         <Footer />
+      </div>
+      <div>
+        
+        <button onClick={Top} 
+           className="bg-black text-white ">Button</button>
+        
       </div>
     </>
   );
