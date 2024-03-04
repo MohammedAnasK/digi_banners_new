@@ -28,11 +28,17 @@ function classNames(...classes) {
 
 
 function App() {
+<<<<<<< HEAD
 
  const Top = () =>{
   window.scrollTo(0,0);
  }
 
+=======
+  const Top = () => {
+    window.scrollTo(0, 0);
+  };
+>>>>>>> d120b95c725c44b907e1b180294a3464434038e6
   return (
     <>
       <div>
@@ -59,6 +65,10 @@ function App() {
         </div>
 
         <Footer />
+        <button
+          onClick={Top}
+          className="bg-[url('src/assets/arrow-up-solid.svg')] bg-white bg-no-repeat bg-center  text-white  fixed bottom-0 right-0 rounded-full  h-20 w-20 m-10 max-md:w-10  "
+        ></button>
       </div>
       <div>
         

@@ -3,6 +3,7 @@ import React from "react";
 function Work() {
   return (
     <div>
+      <h1 className="bg-slate-600 text-center text-white">Work</h1>
       <div
         id="work"
         className="w-full h-screen bg-slate-600 text-white text-center grid gap-4 grid-cols-5  p-4 overflow-x-scroll  max-md:grid-cols-1  "
