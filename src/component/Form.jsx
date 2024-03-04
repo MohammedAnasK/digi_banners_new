@@ -100,7 +100,7 @@ const MyForm = () => {
               className=" p-2 w-96 border rounded max-md:w-full"
             />
           </Form.Item>
-          <Form.Item>
+          <Form.Item className="px-2">
             <Button
               type="primary"
               htmlType="submit"
