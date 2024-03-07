@@ -7,7 +7,7 @@ import {
 
 function TestimonialCard({ img, client, title, clientInfo }) {
   return (
-    <Card shadow={false} className="bg-white rounded-2xl p-6 ">
+    <Card shadow={false} className="bg-white rounded-2xl p-4 ">
       <CardHeader color="transparent" floated={false} shadow={false}>
         <Typography
           color="blue-gray"
@@ -53,7 +53,7 @@ const testimonials = [
 
 export function TestimonialSection16() {
   return (
-    <section className="px-8 py-10 lg:py-28">
+    <section className="px-8 py-10 lg:py-">
       <div className="container mx-auto">
         <Typography
           variant="h2"
@@ -88,7 +88,7 @@ export function TestimonialSection16() {
           </CardHeader>
           <CardBody className="items-center mx-auto py-2">
             <img
-              src="/image/spotify.svg"
+             // src="/image/spotify.svg"
               className="max-w-[8rem] mx-auto grayscale"
               alt="spotify"
             />

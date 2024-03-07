@@ -12,6 +12,7 @@ import Home1 from "./component/Home1";
 import Work from "./component/Work";
 // import { Footer } from "antd/es/layout/layout";
 import Footer from "./component/Footer";
+import Banner from "./component/Banner";
 // import CarouselPlugin from "./component/work_slides";
 
 const navigation = [
@@ -24,42 +25,32 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-
-
-
 function App() {
-<<<<<<< HEAD
-
- const Top = () =>{
-  window.scrollTo(0,0);
- }
-
-=======
   const Top = () => {
     window.scrollTo(0, 0);
   };
->>>>>>> d120b95c725c44b907e1b180294a3464434038e6
   return (
     <>
+    
       <div>
         <Home1 />
 
         <div className="w-full h-screen text-white text-center bg-gradient-to-r from-teal-950 to-green-300 ">
           {/* <CarouselPlugin /> */}
-          Banner
+       <Banner/>
         </div>
         <Work />
 
         <div
           id="review"
-          className="w-full h-full h- bg-slate-800 text-white text-center "
+          className="w-full h-full h- bg-slate-800 text-white text-center text-4xl font-bold p-2"
         >
           Testemony
           <TestimonialSection16 />
         </div>
         <div
           id="form"
-          className="w-full h-screen   bg-pink-900 text-white text-center"
+          className="w-full h-screen    bg-pink-900 text-white text-center"
         >
           <Form />
         </div>
@@ -67,14 +58,11 @@ function App() {
         <Footer />
         <button
           onClick={Top}
-          className="bg-[url('src/assets/arrow-up-solid.svg')] bg-white bg-no-repeat bg-center  text-white  fixed bottom-0 right-0 rounded-full  h-20 w-20 m-10 max-md:w-10  "
+          className="bg-[url('src/assets/arrow-up-solid.svg')] bg-white bg-no-repeat bg-center  text-white  fixed bottom-0 right-0 rounded-full  h-10 w-10 m-10 max-md:w-10  "
         ></button>
       </div>
       <div>
-        
-        <button onClick={Top} 
-           className="bg-black text-white ">Button</button>
-        
+     
       </div>
     </>
   );
